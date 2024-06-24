@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>¡Eureka! Envia una idea</title>
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,600&display=swap" rel="stylesheet">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="divLoading" >
+    <div>
+      <img src="loading.svg" alt="Loading">
+    </div>
+  </div>
+
+
+<header class="header">
+
+  <a href="" class="logo">
+    <img class="logo" src="ideasMOTLogo.png">
+  </a>
+
+
+  <h1 class="header__title"><strong>¡EUREKA!</strong></h1>
+</header>
+<div class="content">
+  <div class="content__inner">
+    <div class="container">
+
+      <h2 class="content__title">Es hora de enviar una idea</h2>
+    </div>
+    <div class="container overflow-hidden">
+      <div class="multisteps-form">
+        <div class="row">
+          <div class="col-12 col-lg-8 ml-auto mr-auto mb-4">
+            <div class="multisteps-form__progress">
+              <button class="multisteps-form__progress-btn js-active" type="button" title="Idea_info">Idea</button>
+              <button class="multisteps-form__progress-btn" type="button" title="Scamper_S">S</button>
+              <button class="multisteps-form__progress-btn" type="button" title="Scamper_C">C</button>
+              <button class="multisteps-form__progress-btn" type="button" title="Scamper_A">A</button>
+              <button class="multisteps-form__progress-btn" type="button" title="Scamper_M">M</button>
+              <button class="multisteps-form__progress-btn" type="button" title="Scamper_P">P</button>
+              <button class="multisteps-form__progress-btn" type="button" title="Scamper_E">E</button>
+              <button class="multisteps-form__progress-btn" type="button" title="Scamper_R">R</button>
+              <button class="multisteps-form__progress-btn" type="button" title="Message">Enviar</button>               
+            </div>
+          </div>
+        </div>
+
+        
+        <div class="row">
+          <div class="col-12 col-lg-8 m-auto">
+            
+            <form class="multisteps-form__form" name="ideas-form" id="ideas-form" method="post" action="https://script.google.com/a/macros/mapleoiltools.com/s/AKfycbxbWap5Rn6PpKkXBvhp4y_bkl6jeuWE0OC7FMT6kZcL_AghJ2HA2axxSjQoqFTFXLda/exec">
+              <div class="multisteps-form__panel shadow p-4 rounded bg-white js-active" data-animation="slideHorz">
+                <h3 class="multisteps-form__title">Información inicial</h3>
+                <div class="multisteps-form__content">
+                  <div class="form-row mt-4">
+                    <div class="col-6 mb-4">
+                      <input class="multisteps-form__input form-control" name="name_user" id="name_user" type="text" placeholder="Ingresa tu nombre" required/>
+                    </div>
+                    <div class="col-6 mb-4">
+                      <select class="multisteps-form__select form-control" name="ctg_base" id="ctg_base">
+                        <option disabled selected>Seleccione su area MOT</option>
+                        <option>Ventas (Bogota)</option>
+                        <option>Producción (Bucaramanga)</option>
+                        <option>Operaciones (Funza)</option>
+                      </select>
+                    </div>
+
+
+                    <div class="col-12">
+                      <input class="multisteps-form__input form-control" name="title_idea" id="title_idea" type="text" placeholder="Titulo de la idea" required/>
+                    </div>
+                    <div class="col-12 mt-4">
+                      <textarea class="multisteps-form__textarea form-control" name="idea_description" id="idea_description" placeholder="Añade una breve descripción" required></textarea>
+                    </div>
+                    <div class="col-12 mt-4">
+                      <select class="multisteps-form__select form-control" name="ctg_idea" id="ctg_idea">
+                        <option disabled selected>Selecciona la categoria:</option>
+                        <option>Cliente externo</option>
+                        <option>Producto para servicio</option>
+                        <option>Cliente interno</option>
+                      </select>
+                    </div>                    
+                  </div>                  
+                  <div class="button-row d-flex mt-4">
+                    <button class="btn btn-primary ml-auto js-btn-next" type="button" title="Next">Siguiente</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="multisteps-form__panel shadow p-4 rounded bg-white" data-animation="slideHorz">
+                <h3 class="multisteps-form__title">Pregunta 1(S):</h3>
+                <p class="content__title text-left">¿Podemos sustituir un elemento de la idea?</p>
+                <div class="multisteps-form__content">
+                  <div class="form-row mt-4">
+                    <div class="col-12">
+                      <select class="multisteps-form__select form-control" name="pg_1_rta" id="q1_sele" required>
+                        <option disabled selected="selected" value="0">Selecciona la categoria:</option>
+                        <option>Si</option>
+                        <option>No</option>
+                        <option>No se sabe</option>
+                      </select>
+                    </div>     
+                    <div class="col-12 mt-4">
+                      <textarea class="multisteps-form__textarea form-control" name="pg_1_txt" id="q1_txt" placeholder="Añade una breve descripción"></textarea>
+                    </div>
+                                                         
+                  </div>                  
+                  <div class="button-row d-flex mt-4">
+                    <button class="btn btn-primary js-btn-prev" type="button" title="Prev">Volver</button>
+                    <button class="btn btn-primary ml-auto js-btn-next" type="button" title="Next">Siguiente</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="multisteps-form__panel shadow p-4 rounded bg-white" data-animation="slideHorz">
+                <h3 class="multisteps-form__title">Pregunta 2(C):</h3>
+                <p class="content__title text-left">¿Podemos combinar dos ideas para generar una nueva?</p>
+                <div class="multisteps-form__content">
+                  <div class="form-row mt-4">
+                    <div class="col-12">
+                      <select class="multisteps-form__select form-control" name="pg_2_rta" id="q2_sele" required>
+                        <option selected="selected" value="0">Selecciona la categoria:</option>
+                        <option>Si</option>
+                        <option>No</option>
+                        <option>No se sabe</option>
+                      </select>
+                    </div> 
+                    <div class="col-12 mt-4">
+                      <textarea class="multisteps-form__textarea form-control" name="pg_2_txt" id="q2_txt" placeholder="Añade una breve descripción"></textarea>
+                    </div>
+                                                         
+                  </div>                  
+                  <div class="button-row d-flex mt-4">
+                    <button class="btn btn-primary js-btn-prev" type="button" title="Prev">Volver</button>
+                    <button class="btn btn-primary ml-auto js-btn-next" type="button" title="Next">Siguiente</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="multisteps-form__panel shadow p-4 rounded bg-white" data-animation="slideHorz">
+                <h3 class="multisteps-form__title">Pregunta 3(A):</h3>
+                <p class="content__title text-left">¿Podemos modificar o adaptar un diseño que ya existe?</p>
+                <div class="multisteps-form__content">
+                  <div class="form-row mt-4">
+                    <div class="col-12">
+                      <select class="multisteps-form__select form-control" name="pg_3_rta" id="q3_sele" required>
+                        <option selected="selected">Selecciona la categoria:</option>
+                        <option>Si</option>
+                        <option>No</option>
+                        <option>No se sabe</option>
+                      </select>
+                    </div> 
+                    <div class="col-12 mt-4">
+                      <textarea class="multisteps-form__textarea form-control" name="pg_3_txt" id="q3_txt" placeholder="Añade una breve descripción"></textarea>
+                    </div>
+                                                         
+                  </div>                  
+                  <div class="button-row d-flex mt-4">
+                    <button class="btn btn-primary js-btn-prev" type="button" title="Prev">Volver</button>
+                    <button class="btn btn-primary ml-auto js-btn-next" type="button" title="Next">Siguiente</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="multisteps-form__panel shadow p-4 rounded bg-white" data-animation="slideHorz">
+                <h3 class="multisteps-form__title">Pregunta 4(M):</h3>
+                <p class="content__title text-left">¿Podemos modificarlo para crear algo nuevo?</p>
+                <div class="multisteps-form__content">
+                  <div class="form-row mt-4">
+                    <div class="col-12">
+                      <select class="multisteps-form__select form-control" name="pg_4_rta" id="q4_sele" required>
+                        <option selected="selected">Selecciona la categoria:</option>
+                        <option>Si</option>
+                        <option>No</option>
+                        <option>No se sabe</option>
+                      </select>
+                    </div> 
+                    <div class="col-12 mt-4">
+                      <textarea class="multisteps-form__textarea form-control" name="pg_4_txt" id="q4_txt" placeholder="Añade una breve descripción"></textarea>
+                    </div>
+                                                         
+                  </div>                  
+                  <div class="button-row d-flex mt-4">
+                    <button class="btn btn-primary js-btn-prev" type="button" title="Prev">Volver</button>
+                    <button class="btn btn-primary ml-auto js-btn-next" type="button" title="Next">Siguiente</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="multisteps-form__panel shadow p-4 rounded bg-white" data-animation="slideHorz">
+                <h3 class="multisteps-form__title">Pregunta 5(P):</h3>
+                <p class="content__title text-left">¿Podemos darle otros usos o funcionalidades?</p>
+                <div class="multisteps-form__content">
+                  <div class="form-row mt-4">
+                    <div class="col-12">
+                      <select class="multisteps-form__select form-control" name="pg_5_rta" id="q5_sele" required>
+                        <option selected="selected">Selecciona la categoria:</option>
+                        <option>Si</option>
+                        <option>No</option>
+                        <option>No se sabe</option>
+                      </select>
+                    </div> 
+                    <div class="col-12 mt-4">
+                      <textarea class="multisteps-form__textarea form-control" name="pg_5_txt" id="q5_txt" placeholder="Añade una breve descripción"></textarea>
+                    </div>
+                                                         
+                  </div>                  
+                  <div class="button-row d-flex mt-4">
+                    <button class="btn btn-primary js-btn-prev" type="button" title="Prev">Volver</button>
+                    <button class="btn btn-primary ml-auto js-btn-next" type="button" title="Next">Siguiente</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="multisteps-form__panel shadow p-4 rounded bg-white" data-animation="slideHorz">
+                <h3 class="multisteps-form__title">Pregunta 6(E):</h3>
+                <p class="content__title text-left">¿Podemos eliminar un componente de la idea?</p>
+                <div class="multisteps-form__content">
+                  <div class="form-row mt-4">
+                    <div class="col-12">
+                      <select class="multisteps-form__select form-control" name="pg_6_rta" id="q6_sele" required>
+                        <option selected="selected">Selecciona la categoria:</option>
+                        <option>Si</option>
+                        <option>No</option>
+                        <option>No se sabe</option>
+                      </select>
+                    </div>
+                    <div class="col-12 mt-4">
+                      <textarea class="multisteps-form__textarea form-control" name="pg_6_txt" id="q6_txt" placeholder="Añade una breve descripción"></textarea>
+                    </div>
+                                                         
+                  </div>                  
+                  <div class="button-row d-flex mt-4">
+                    <button class="btn btn-primary js-btn-prev" type="button" title="Prev">Volver</button>
+                    <button class="btn btn-primary ml-auto js-btn-next" type="button" title="Next">Siguiente</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="multisteps-form__panel shadow p-4 rounded bg-white" data-animation="slideHorz">
+                <h3 class="multisteps-form__title">Pregunta 7(R):</h3>
+                <p class="content__title text-left">¿Podemos reordenar o rediseñar la idea para generar algo nuevo?</p>
+                <div class="multisteps-form__content">
+                  <div class="form-row mt-4">
+                    <div class="col-12">
+                      <select class="multisteps-form__select form-control" name="pg_7_rta" id="q7_sele" required>
+                        <option selected="selected">Selecciona la categoria:</option>
+                        <option>Si</option>
+                        <option>No</option>
+                        <option>No se sabe</option>
+                      </select>
+                    </div> 
+                    <div class="col-12 mt-4">
+                      <textarea class="multisteps-form__textarea form-control" name="pg_7_txt" id="q7_txt" placeholder="Añade una breve descripción"></textarea>
+                    </div>
+                                                         
+                  </div>                  
+                  <div class="button-row d-flex mt-4">
+                    <button class="btn btn-primary js-btn-prev" type="button" title="Prev">Volver</button>
+                    <button class="btn btn-primary ml-auto js-btn-next" type="button" title="Next">Siguiente</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="multisteps-form__panel shadow p-4 rounded bg-white" data-animation="slideHorz">
+                <h3 class="multisteps-form__title">Comentarios</h3>
+                <div class="multisteps-form__content">
+                  <div class="form-row mt-4">
+                    <textarea class="multisteps-form__textarea form-control" name="comentarios_txt" id="comments_txtarea" placeholder="Comentario adicional"></textarea>
+                  </div>
+                  <div class="button-row d-flex mt-4">
+                    <button class="btn btn-primary js-btn-prev" type="button" title="Prev">Volver</button>
+                    <button class="btn btn-success ml-auto js-submit-form" type="submit" title="Send">Enviar</button>
+                  </div>
+                </div>
+              </div>
+
+
+              
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script  src="function.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+</body>
+</html>
